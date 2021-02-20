@@ -1,0 +1,88 @@
+$primaryColor: #324e6a;
+
+@mixin flex{
+    display:flex;
+    flex-flow:row wrap;
+}
+
+*{
+    font-family:Arial;
+    :before,:after{
+        box-sizing:border-box;
+    }
+}
+
+body{
+    color:#ffffff;
+    font-size:1rem;
+    background:$primaryColor;
+}
+
+div{
+    border:0px solid black;
+}
+
+h1{
+    text-align:center;
+    margin-top:150px;
+}
+
+.container{
+    @include flex;
+    min-height:150px;
+    justify-content:center;
+    align-items:center;
+
+    .form{
+        flex-basis:40%;
+        background:#ffffff;
+        min-height:230px;
+
+        form{
+
+            span{
+                display:block;
+                color:red;
+                font-size:0.7rem;
+                font-weight:bolder;
+                text-align:center;
+            }
+
+            p{
+                color:black;
+                font-size:1.2rem;
+                margin-top:15px;
+                text-align:center;
+
+                
+            input[type=text], input[type=password]{
+                border:2px solid $primaryColor;
+                border-radius:10px;
+                padding:10px;
+        }
+            }
+
+            p:first-child{
+                margin-top:35px;
+            }
+
+            input[type=submit]{
+                background:$primaryColor;
+                color:#ffffff;
+                padding:5px;
+                border:2px solid $primaryColor;
+                border-radius:10px;
+            }
+           
+        }
+
+    }
+}
+
+h2{
+    text-align:center;
+    a{
+        text-decoration:none;
+        color:orangered;
+    }
+}

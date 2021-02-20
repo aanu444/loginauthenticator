@@ -1,0 +1,90 @@
+* {
+  font-family: Arial;
+}
+
+* :before, * :after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  color: #ffffff;
+  font-size: 1rem;
+  background: #324e6a;
+}
+
+div {
+  border: 0px solid black;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 150px;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  min-height: 150px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .form {
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+  background: #ffffff;
+  min-height: 230px;
+}
+
+.container .form form span {
+  display: block;
+  color: red;
+  font-size: 0.7rem;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.container .form form p {
+  color: black;
+  font-size: 1.2rem;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.container .form form p input[type=text], .container .form form p input[type=password] {
+  border: 2px solid #324e6a;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.container .form form p:first-child {
+  margin-top: 35px;
+}
+
+.container .form form input[type=submit] {
+  background: #324e6a;
+  color: #ffffff;
+  padding: 5px;
+  border: 2px solid #324e6a;
+  border-radius: 10px;
+}
+
+h2 {
+  text-align: center;
+}
+
+h2 a {
+  text-decoration: none;
+  color: orangered;
+}
+/*# sourceMappingURL=styles.css.map */
